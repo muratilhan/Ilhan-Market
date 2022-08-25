@@ -1,0 +1,27 @@
+.favori-single{
+    width: 40%;
+    border:1px solid black;
+    height: min-content;
+    display: flex;
+    border-radius: 10px;
+    margin:40px 0px 20px 50px;
+    border-bottom: 2px solid rgb(92, 92, 92);
+    border-right: 2px solid rgb(92, 92, 92);
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    
+}
+
+@media screen and (max-width:1000px){
+    .favori-single{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .single-items{
+        margin: 0px;
+        padding: 0px;
+    }
+}

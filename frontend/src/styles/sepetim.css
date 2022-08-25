@@ -1,0 +1,122 @@
+.sepetim{
+    display: flex;
+    width: 100%;
+}
+.sepetim img{
+    width: 40%;
+}
+.sepetim-sidebar-container{
+    border-bottom: 2px solid rgb(33, 218, 0);
+    border-right: 2px solid rgb(33, 218, 0);
+    border-top: 1px solid rgb(99, 255, 97);
+    border-left: 1px solid rgb(99, 255, 97);
+    border-radius: 10px;   
+    color:black;
+    display: flex;
+    flex-direction: column;
+    margin:60px 0px 0px 30px;
+    height: 50vh;
+    width: 30%;
+    justify-content: space-evenly;
+}
+.single-sepetim{
+    border-bottom: 2px solid rgb(92, 92, 92);
+    border-right: 2px solid rgb(92, 92, 92);
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    width: 42%;
+    margin: 30px 10px 10px 45px;
+
+}
+.sepetim-items{
+    align-items: center;
+    margin: 30px;
+    width:100%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-sepetim img{
+    display: flex;
+}
+.single-sepetim-buttons{
+    display: flex;
+}
+.single-sepetim-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.single-sepetim-button:first-child{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+.single-sepetim-button:last-child{
+    margin-left: 10px;
+}
+.single-sepetim-infos li {
+    list-style: none;
+    color:black;
+    margin: 0px 0px 0px 30px;
+}
+.sepetim-sidebar-button-container{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    margin-bottom: 30px;
+    
+}
+.sepetim-sidebar-button{
+    margin: 0 auto;
+    
+}
+.sepetim-sidebar-infos{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.fa-plus{
+    color:yellow;
+    font-size: 32px;
+}
+
+@media screen and (max-width:1000px){
+    .sepetim{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .single-sepetim{
+        margin: 0px;
+        width: 100%;
+        padding: 0px;
+    }
+    .single-sepetim-infos{
+        margin: 0px;
+        padding: 0px;
+    }
+    .sepetim-items{
+        margin: 0px;
+        padding: 0px;
+    }
+    .sepetim-sidebar-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin:0px;
+        height: 25vh;
+    }
+    .single-sepetim-button{
+        margin: 5px;
+        padding: 4px;
+    }
+}

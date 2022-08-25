@@ -1,0 +1,80 @@
+.topbar-mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+.topbar-mid-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+} 
+.header-navigate{
+  margin-right: 30px;
+}
+.header-buttons{
+  margin-right: 50px;
+}
+.navbar-container{
+  width: 100%;
+  border-radius: 50px;
+  border-bottom: 2px solid orange;
+ 
+}
+.brand span{
+  margin-left: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  color:black;
+  text-decoration: none;
+}
+.brand span:hover{
+    background-color: orange;
+    color: white;
+    transition: 0.5s;
+}
+.brand{
+  text-decoration: none;
+}
+.topbar-mid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.topbar-right{
+    margin-left: 400px;
+}
+.topbar-input{
+  margin-left: 300px;
+}
+
+@media screen and (max-width:1000px){
+    .navbar-container{
+      width: 100%;
+    }
+    .App{
+      margin: 0px;
+      padding: 0px;
+    }
+    .header-navigate{
+      margin: 0px;
+    }
+    body{
+      margin: 0px;
+      padding: 0px;
+    }
+    .topbar-input{
+      margin:10px 0px 10px 0px;
+    }
+    .topbar-right{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0px;
+  }
+  .header-navigate{
+    margin: 10px;
+  }
+}
