@@ -1,4 +1,4 @@
-import React,{useContext} from 'react'
+import React,{useContext, useState} from 'react'
 import {Button} from 'react-bootstrap'
 import {Context} from '../App'
 import '../styles/sepetim.css'
@@ -20,6 +20,7 @@ function SingleSepetim({item}) {
   }
   const handleClickDecrease = () => {
     const getItem = context.sepetim.find(product => product.id === item.id)
+    
     if(getItem.count > 1) {
       context.setSepetim(context.sepetim.map(product => product.id === item.id ? {...product, count: product.count -1 } : product))
       toast.success('Adet 1 azaltıldı..', {
@@ -48,7 +49,7 @@ function SingleSepetim({item}) {
           <li> Adet Sayısı: <span style={{color:"red"}}><b>{item.count}</b></span> </li>
           <div className='single-sepetim-buttons'>
             <Button onClick={handleClickIncrease} className='single-sepetim-button' variant="outline-success">( + )</Button>
-            <Button onClick={handleClickDecrease} className='single-sepetim-button' variant="outline-warning">( - )</Button>
+            <Button onClick={handleClickDecrease} className="single-sepetim-button" variant="outline-warning">( - )</Button>
             <Button onClick={handleClick} className='single-sepetim-button' variant="outline-danger"> Çıkart</Button>
           </div>
           

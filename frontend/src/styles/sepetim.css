@@ -53,6 +53,10 @@
     margin-left: 30px;
     margin-right: 10px;
 }
+.single-sepetim-button-allowed{
+    display: none;
+}
+
 .single-sepetim-button:last-child{
     margin-left: 10px;
 }
@@ -61,17 +65,35 @@
     color:black;
     margin: 0px 0px 0px 30px;
 }
+.sepetim-sidebar-li{
+    list-style: none;
+    display: flex;
+    margin:5px;
+    align-items: center;
+}
+.contact-type{
+    margin-left: 10px;
+}
+.sepetim-sidebar-ul{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 20px;
+    margin-right: 50px;
+
+}
 .sepetim-sidebar-button-container{
     width: 100%;
     justify-content: center;
     align-items: center;
     display: flex;
-
+    flex-direction: column;
     margin-bottom: 30px;
     
 }
 .sepetim-sidebar-button{
     margin: 0 auto;
+    margin-top: 60px;
     
 }
 .sepetim-sidebar-infos{
@@ -113,10 +135,15 @@
         justify-content: center;
         width: 100%;
         margin:0px;
-        height: 25vh;
+        height: 40vh;
     }
     .single-sepetim-button{
         margin: 5px;
         padding: 4px;
+    }
+    .sepetim-sidebar-button{
+        margin: 0 auto;
+        margin-top: 20px;
+        
     }
 }

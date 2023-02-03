@@ -13,6 +13,9 @@
     flex-direction: column;
     margin:5vh 0px 0px 5vh
 }
+.sidebar-dropdown{
+    display: none;
+}
 .items{
     color:black;
     padding: 0px;
@@ -44,7 +47,9 @@ h4{
         margin: 0px;
         padding: 0px;
         height:min-content;
+        border: none;
     }
+    
     .kategoriler{
         margin: 0px;
         padding: 0px;
@@ -62,5 +67,13 @@ h4{
         margin: 10px;
         padding: 10px;
         width: 60%;
+        display: none;
+    }
+    .items{
+        display: none;
+    }
+    .sidebar-dropdown{
+        display: block;
+        margin: 20px;
     }
 }
